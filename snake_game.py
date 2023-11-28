@@ -1,8 +1,8 @@
 # import required modules
-#turtle is a graph model
+#turtle is a graph model drawing board,
 import turtle
 import time
-import random
+import random #for make food in random way
 
 #delay time for the snake to start change the movement
 delay = 0.1
@@ -13,7 +13,7 @@ high_score = 0 # at the first score =High_score =0
 # Creating a window screen
 wn = turtle.Screen()
 wn.title("Snake Game by Korsat X Parmaga")
-wn.bgcolor("#000087")
+wn.bgcolor("#000087")    #color for the window
 # the width and height can be put as user's choice
 wn.setup(width=600, height=600)
 # disable window resize
@@ -26,13 +26,13 @@ head.shape("square")
 head.color("white")
 head.penup()  # stop drawing lines when moving
 head.speed(0)
-head.goto(0, 0)
+head.goto(0, 0)    #start creatin place in win x=0 ,y =0
 head.direction = "Stop"
 
 # food in the game
 food = turtle.Turtle()
-colors = random.choice(["red", "green", "black"])
-shapes = random.choice(["square", "circle"])
+colors = random.choice(["red", "green", "black"]) #food will be in random 3 color selection
+shapes = random.choice(["square", "circle"])  # and will be in 2 random shapes
 food.shape(shapes)
 food.color(colors)
 food.penup()
