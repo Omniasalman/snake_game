@@ -1,11 +1,13 @@
 # import required modules
+#turtle is a graph model
 import turtle
 import time
 import random
 
+#delay time for the snake to start change the movement
 delay = 0.1
 score = 0
-high_score = 0
+high_score = 0 # at the first score =High_score =0
 
 
 # Creating a window screen
